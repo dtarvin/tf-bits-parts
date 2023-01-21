@@ -1,0 +1,13 @@
+<div>
+    <label for="single-standard-firstName">First Name: </label>
+    <input type="text" name="single-standard-firstName" id="single-standard-firstName" [(ngModel)]="firstName">
+</div>
+<div>
+    <label for="single-standard-lastName">Last Name: </label>
+    <input type="text" name="single-standard-lastName" id="single-standard-lastName" [(ngModel)]="lastName">
+</div>
+<div>
+    <label for="single-standard-yearOfBirth">Year of Birth: </label>
+    <input type="number" name="single-standard-yearOfBirth" id="single-standard-yearOfBirth" [(ngModel)]="yearOfBirth">
+</div>
+<button type="submit" (click)="getInput()">Submit</button>

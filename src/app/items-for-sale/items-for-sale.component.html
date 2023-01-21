@@ -1,0 +1,17 @@
+<div class="item-card">
+    <div class="item-title">
+        {{ cardIndex + ' ' + item.title }}
+    </div>
+    <img width="300" [src]="item.imageUrl" [alt]="item.title">
+    <div class="item-description">
+        {{ item.description }}
+    </div>
+    <div>
+        price: {{ item.price | currency }}
+    </div>
+    <div>
+        seller: {{ item.seller }}
+    </div>
+
+    <button (click)="buyNow()">Buy Now</button>
+</div>

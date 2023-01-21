@@ -1,0 +1,26 @@
+<div class="top-menu">
+  <h1>Transformers Bits and Parts</h1>
+</div>
+
+<div class="items-for-sale">
+
+  <items-for-sale 
+          *ngFor="let item of items;index as i;first as isFirst;last as isLast;even as isEven;odd as isOdd" 
+          (itemSelected)="onItemSelected($event)" 
+          [class.is-first]="isFirst" 
+          [class.is-last]="isLast"
+          [class.is-even]="isEven"
+          [class.is-odd]="isOdd"
+          [item]="item" [cardIndex]="i + 1">
+  </items-for-sale>    
+
+  <!-- <items-for-sale (itemSelected)="onItemSelected($event)" [item]="opItem"></items-for-sale> -->
+
+  <!-- <items-for-sale (itemSelected)="onItemSelected($event)" [item]="prwItem"></items-for-sale>
+
+  <items-for-sale (itemSelected)="onItemSelected($event)" [item]="rbItem"></items-for-sale> -->
+  <hr>
+  <hr>
+  <user-data-single-standard></user-data-single-standard>]
+  <user-data-container></user-data-container>
+</div>
